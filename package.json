@@ -30,8 +30,12 @@
   },
   "dependencies": {
     "axios": "^0.18.0",
-    "mongoose": "^5.3.16",
+    "bootstrap": "^4.6.0",
+    "express": "^4.17.1",
+    "firebase": "^8.2.7",
     "if-env": "^1.0.4",
-    "express": "^4.17.1"
+    "mongoose": "^5.3.16",
+    "react-bootstrap": "^1.4.3",
+    "react-router-dom": "^5.2.0"
   }
 }
