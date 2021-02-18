@@ -1,13 +1,13 @@
 import React from "react"
-import Signup from "./Signup"
+import Signup from "./components/Signup/Signup"
 import { Container } from "react-bootstrap"
-import { AuthProvider } from "../contexts/AuthContext"
+import { AuthProvider } from "./contexts/AuthContext"
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
-import Dashboard from "./Dashboard"
-import Login from "./Login"
-import PrivateRoute from "./PrivateRoute"
-import ForgotPassword from "./ForgotPassword"
-import UpdateProfile from "./UpdateProfile"
+import Dashboard from "./components/Dashboard/Dashboard"
+import Login from "./components/Login/Login"
+import PrivateRoute from "./components/PrivateRoute/PrivateRoute"
+import ForgotPassword from "./components/ForgotPassword/ForgotPassword"
+import UpdateProfile from "./components/UpdateProfile/UpdateProfile"
 
 
 function App() {
@@ -34,5 +34,6 @@ function App() {
     </Container>
   )
 }
+
 
 export default App
