@@ -1,0 +1,44 @@
+body {
+    height: 100%;
+    background-image: url("./Assets/Link_vs_Mario.gif");
+    background-color: #cccccc;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+   }
+
+   
+
+li {
+    list-style: none;
+}
+
+header {
+    font-size: 2.5rem;
+    color: rgb(3, 99, 209);
+    display: 'inline-block';
+    font-style: oblique;
+    text-align: center;
+    text-decoration: underline;
+}
+
+div {
+    text-decoration: underline;
+    font-style: italic;
+}
+
+.player1 {
+    color: rgb(4, 255, 113);
+}
+.player2 {
+    color: rgb(0, 102, 255);
+}
+.player3 {
+    color: rgb(0, 102, 255);
+}
+.player4 {
+    color: rgb(255, 145, 0);
+}
+.player5 {
+    color: rgb(255, 0, 0);
+}

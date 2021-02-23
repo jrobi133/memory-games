@@ -8,7 +8,7 @@ import Login from "./components/Login/Login"
 import PrivateRoute from "./components/PrivateRoute/PrivateRoute"
 import ForgotPassword from "./components/ForgotPassword/ForgotPassword"
 import UpdateProfile from "./components/UpdateProfile/UpdateProfile"
-
+import HighScores from "./components/Highscores/Highscores"
 
 function App() {
   return (
@@ -20,6 +20,7 @@ function App() {
         <Router>
           <AuthProvider>
             <Switch>
+              <PrivateRoute exact path="/highscores" component={HighScores} />
               <PrivateRoute exact path="/" component={Dashboard} />
               <PrivateRoute path="/update-profile" component={UpdateProfile} />
               <Route path="/signup" component={Signup} />
