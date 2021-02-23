@@ -9,6 +9,7 @@ import PrivateRoute from "./components/PrivateRoute/PrivateRoute"
 import ForgotPassword from "./components/ForgotPassword/ForgotPassword"
 import UpdateProfile from "./components/UpdateProfile/UpdateProfile"
 import HighScores from "./components/Highscores/Highscores"
+import GameManager from "./components/GameManager/GameManager"
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
               <PrivateRoute exact path="/highscores" component={HighScores} />
               <PrivateRoute exact path="/" component={Dashboard} />
               <PrivateRoute path="/update-profile" component={UpdateProfile} />
+              <PrivateRoute path="/game-manager" component={GameManager} />
               <Route path="/signup" component={Signup} />
               <Route path="/login" component={Login} />
               <Route path="/forgot-password" component={ForgotPassword} />
