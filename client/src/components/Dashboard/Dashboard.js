@@ -1,13 +1,21 @@
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react"
 import { Card, Button, Alert } from "react-bootstrap"
 import { useAuth } from "../../contexts/AuthContext"
 import { Link, useHistory } from "react-router-dom"
 import Nav from "../Nav/Nav"
+import Form from "../Form/Form"
+// import useStyles from './styles';
+import { useDispatch } from 'react-redux';
+import { getPosts } from '../../actions/posts';
 
 export default function Dashboard() {
   const [error, setError] = useState("")
   const { currentUser, logout } = useAuth()
   const history = useHistory()
+
+  const [currentId, setCurrentId] = useState(0);
+  const dispatch = useDispatch();
+  // const classes = useStyles();
 
   async function handleLogout() {
     setError("")
@@ -20,10 +28,15 @@ export default function Dashboard() {
     }
   }
 
+  useEffect(() => {
+    dispatch(getPosts());
+  }, [currentId, dispatch]);
+
   return (
     <>
-  <Nav />
-    <Card>
+    <Nav />
+    <Form currentId={currentId} setCurrentId={setCurrentId} />
+      <Card>
         <Card.Body>
           <h2 className="text-center mb-4">Profile</h2>
           {error && <Alert variant="danger">{error}</Alert>}
