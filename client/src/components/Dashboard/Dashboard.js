@@ -3,10 +3,12 @@ import { Card, Button, Alert } from "react-bootstrap"
 import { useAuth } from "../../contexts/AuthContext"
 import { Link, useHistory } from "react-router-dom"
 import Nav from "../Nav/Nav"
+
 import Form from "../Form/Form"
 // import useStyles from './styles';
 import { useDispatch } from 'react-redux';
 import { getPosts } from '../../actions/posts';
+
 
 export default function Dashboard() {
   const [error, setError] = useState("")
@@ -34,9 +36,8 @@ export default function Dashboard() {
 
   return (
     <>
-    <Nav />
-    <Form currentId={currentId} setCurrentId={setCurrentId} />
-      <Card>
+  <Nav />
+    <Card>
         <Card.Body>
           <h2 className="text-center mb-4">Profile</h2>
           {error && <Alert variant="danger">{error}</Alert>}
