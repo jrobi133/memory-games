@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/static/css/main.3e129dd6.chunk.css",
+    "main.js": "/static/js/main.a932c003.chunk.js",
+    "main.js.map": "/static/js/main.a932c003.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.c012fedc.js",
+    "runtime-main.js.map": "/static/js/runtime-main.c012fedc.js.map",
+    "static/css/2.150d169a.chunk.css": "/static/css/2.150d169a.chunk.css",
+    "static/js/2.c801cca4.chunk.js": "/static/js/2.c801cca4.chunk.js",
+    "static/js/2.c801cca4.chunk.js.map": "/static/js/2.c801cca4.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/2.150d169a.chunk.css.map": "/static/css/2.150d169a.chunk.css.map",
+    "static/css/main.3e129dd6.chunk.css.map": "/static/css/main.3e129dd6.chunk.css.map",
+    "static/js/2.c801cca4.chunk.js.LICENSE.txt": "/static/js/2.c801cca4.chunk.js.LICENSE.txt",
+    "static/media/Highscores.css": "/static/media/Link_vs_Mario.530f9665.gif",
+    "static/media/yoshi.41e83794.png": "/static/media/yoshi.41e83794.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c012fedc.js",
+    "static/css/2.150d169a.chunk.css",
+    "static/js/2.c801cca4.chunk.js",
+    "static/css/main.3e129dd6.chunk.css",
+    "static/js/main.a932c003.chunk.js"
+  ]
+}
