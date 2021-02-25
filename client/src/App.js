@@ -1,9 +1,9 @@
 import React from "react"
 
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
-import Dashboard from "./components/Dashboard/Dashboard"
-import HighScores from "./components/Highscores/Highscores"
-import GameManager from "./components/GameManager/GameManager"
+import Dashboard from "./pages/Dashboard/Dashboard"
+import HighScores from "./pages/Highscores/Highscores"
+import GameManager from "./pages/GameManager/GameManager"
 import Navbar from './components/Nav/Nav';
 
 function App() {
