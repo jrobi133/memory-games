@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from "react"
 // import { Card, Button, Alert } from "react-bootstrap"
 import { Container, AppBar, Typography, Grow, Grid } from '@material-ui/core';
-// import { useAuth } from "../../contexts/AuthContext"
-import Nav from "../Nav/Nav"
 import Posts from '../Posts/Posts';
 import Form from "../Form/Form"
 import useStyles from './styles';
@@ -12,8 +10,7 @@ import yoshi from '../../images/yoshi.png';
 
 
 export default function GameManager() {
-//   const [error, setError] = useState("")
-//   const { currentUser, logout } = useAuth()
+
 
 
   const [currentId, setCurrentId] = useState(0);
@@ -27,7 +24,6 @@ export default function GameManager() {
 
   return (
     <>
-  <Nav />
   <Container maxWidth="lg">
       <AppBar className={classes.appBar} position="static" color="inherit">
         <Typography className={classes.heading} variant="h2" align="center">Game Manager</Typography>
