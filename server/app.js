@@ -11,7 +11,7 @@ app.use(bodyParser.urlencoded({ limit: '30mb', extended: true }))
 app.use(cors());
 
 if (process.env.NODE_ENV === "production") {
-  app.use(express.static(path.join(__dirname, "../client/public")))
+  app.use(express.static(path.join(__dirname, "../client/build")))
 }
 
 app.use('/posts', postRoutes);
