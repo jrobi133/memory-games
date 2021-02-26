@@ -8,6 +8,6 @@ router.get('/:id', getPost);
 router.patch('/:id', updatePost);
 router.delete('/:id', deletePost);
 
-router.use((req, res) => res.sendFile(path.join(__dirname, "../../client/public/index.html")));
+router.use((req, res) => res.sendFile(path.join(__dirname, "../../client/build/index.html")));
 
 module.exports = router;
