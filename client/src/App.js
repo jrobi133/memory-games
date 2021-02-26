@@ -26,7 +26,7 @@ const App = () => {
 
   } else {
     return (
-      <Router>
+      <Router path="/" >
         <Navbar loggedIn={loggedIn} setReload={setReload} />
         <Switch>
           <ProtectedRoute exact path="/highscores" component={HighScores} />
