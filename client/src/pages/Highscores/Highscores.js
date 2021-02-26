@@ -1,6 +1,5 @@
 import React from "react";
 import "./Highscores.css";
-import Nav from "../Nav/Nav"
 
 
 
@@ -51,7 +50,6 @@ function HighScores() {
 
     return (
         <>
-            <Nav />
 
             <div class="card bg-dark">
                 <header>Memory Games</header>
