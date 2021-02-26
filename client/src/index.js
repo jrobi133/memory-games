@@ -6,14 +6,16 @@ import { createStore, applyMiddleware, compose } from 'redux';
 import thunk from 'redux-thunk';
 import { Provider } from "react-redux";
 import { reducers } from './reducers';
+import Auth0ProviderWithHistory from './auth/auth0-provider-with-history';
+
 const store = createStore(reducers, compose(applyMiddleware(thunk)));
 
 
 ReactDOM.render(
-  <React.StrictMode>
     <Provider store={store}>
-    <App />
-    </Provider>
-  </React.StrictMode>,
+      <Auth0ProviderWithHistory>
+        <App />
+      </Auth0ProviderWithHistory>
+    </Provider>,
   document.getElementById("root")
 )
