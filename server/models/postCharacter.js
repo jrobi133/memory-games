@@ -1,6 +1,5 @@
 
-import mongoose from 'mongoose';
-
+const mongoose = require('mongoose');
 const postSchema = mongoose.Schema({
     title: String,
     selectedFile: String,
@@ -11,5 +10,4 @@ const postSchema = mongoose.Schema({
 })
 
 var PostCharacter = mongoose.model('PostCharacter', postSchema);
-
-export default PostCharacter;
+module.exports = PostCharacter;
