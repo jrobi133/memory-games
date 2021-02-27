@@ -5,7 +5,7 @@ import Wrapper from '../../components/Wrapper';
 import { Col, Row, Container, SectionRow } from '../../components/Grid';
 import Hero from '../../components/Hero';
 
-class Home extends Component {
+class GamePlay extends Component {
   state = {
     heroes: [],
     clickedHeroes: [],
@@ -91,4 +91,4 @@ class Home extends Component {
   }
 }
 
-export default Home;
+export default GamePlay;
