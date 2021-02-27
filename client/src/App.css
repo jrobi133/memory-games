@@ -7,8 +7,8 @@
 
 .home,
 .dashboard,
-.products,
-.sign-up {
+.highscores,
+.game-manager {
   display: flex;
   height: 90vh;
   align-items: center;
@@ -25,8 +25,8 @@
   font-size: 100px;
 }
 
-.products {
-  /* background-image: url('/images/img-1.jpg'); */
+.highscores {
+  background-image: url('./images/mapBackgroud.png');
   background-position: center;
   background-size: fill;
   background-repeat: no-repeat;
@@ -34,8 +34,8 @@
   font-size: 100px;
 }
 
-.sign-up {
-  /* background-image: url('/images/img-8.jpg'); */
+.game-manager {
+  background-image: url('./images/mapBackgroud.png');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
