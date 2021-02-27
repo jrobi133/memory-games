@@ -32,7 +32,7 @@ const App = () => {
         <Navbar loggedIn={loggedIn} setReload={setReload} />
         <Switch>
           <ProtectedRoute exact path="/highscores" component={HighScores} />
-          <Route exact path="/game-play" component={GamePlay} />
+          <ProtectedRoute exact path="/game-play" component={GamePlay} />
           <Route exact path="/" component={Dashboard} />
           <Route path="/game-manager" component={GameManager} />
           <Route path="/profile" component={Profile} />
