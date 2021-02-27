@@ -13,10 +13,17 @@ import Image from '../../images/mapBackgroud.png';
 
 const styles = {
   paperContainer: {
-    backgroundImage: `url(${Image})`,
-    minHeight: '100vh',
-    backgroundRepeat: 'no-repeat',
-    backgroundSize: 'cover',
+    backgroundImage: `url(${Image})`, 
+    backgroundAttachment: "fixed",
+    height: '100vh',
+    backgroundPosition: "center",
+    backgroundRepeat: "noRepeat",
+    backgroundSize: "cover",
+    // minHeight: '100vh',
+    // backgroundRepeat: 'no-repeat',
+    // backgroundSize: 'cover',
+
+    
   }
 }
 
