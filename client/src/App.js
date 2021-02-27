@@ -9,6 +9,7 @@ import Profile from "./pages/profile/profile"
 import ProtectedRoute from "./auth/protected-route"
 import { useAuth0 } from "@auth0/auth0-react";
 import Loading from "./components/loading"
+import GamePlay from "./pages/GamePlay/GamePlay"
 
 
 const App = () => {
@@ -30,6 +31,7 @@ const App = () => {
         <Navbar loggedIn={loggedIn} setReload={setReload} />
         <Switch>
           <ProtectedRoute exact path="/highscores" component={HighScores} />
+          <ProtectedRoute exact path="/game-play" component={GamePlay} />
           <Route exact path="/" component={Dashboard} />
           <Route path="/game-manager" component={GameManager} />
           <Route path="/profile" component={Profile} />
