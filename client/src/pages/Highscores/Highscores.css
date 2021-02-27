@@ -25,6 +25,7 @@ header {
 div {
     text-decoration: underline;
     font-style: italic;
+    text-align: center;
 }
 
 .player1 {
