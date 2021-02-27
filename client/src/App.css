@@ -6,7 +6,7 @@
 }
 
 .home,
-.services,
+.dashboard,
 .products,
 .sign-up {
   display: flex;
@@ -16,8 +16,8 @@
   font-size: 3rem;
 }
 
-.services {
-  /* background-image: url('/images/img-2.jpg'); */
+.dashboard {
+  background-image: url('./images/SuperSmash.jpeg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;

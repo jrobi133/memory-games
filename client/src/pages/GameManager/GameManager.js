@@ -1,13 +1,24 @@
 import React, { useState, useEffect } from "react"
 // import { Card, Button, Alert } from "react-bootstrap"
-import { Container, AppBar, Typography, Grow, Grid } from '@material-ui/core';
+import { Container, AppBar, Typography, Grow, Grid, Paper } from '@material-ui/core';
 import Posts from '../../components/Posts/Posts';
 import Form from "../../components/Form/Form"
 import useStyles from './styles';
 import { useDispatch } from 'react-redux';
 import { getPosts } from '../../actions/posts';
 import yoshi from '../../images/yoshi.png';
+import '../../App.css';
+import Image from '../../images/mapBackgroud.png';
 
+
+const styles = {
+  paperContainer: {
+    backgroundImage: `url(${Image})`,
+    minHeight: '100vh',
+    backgroundRepeat: 'no-repeat',
+    backgroundSize: 'cover',
+  }
+}
 
 export default function GameManager() {
 
@@ -23,8 +34,9 @@ export default function GameManager() {
   }, [currentId, dispatch]);
 
   return (
-    <>
-  <Container maxWidth="lg">
+    
+    <Paper style={styles.paperContainer}>
+    <Container maxWidth="lg">
       <AppBar className={classes.appBar} position="static" color="inherit">
         <Typography className={classes.heading} variant="h2" align="center">Game Manager</Typography>
         <img className={classes.image} src={yoshi} alt="icon" height="60" />
@@ -42,6 +54,7 @@ export default function GameManager() {
         </Container>
       </Grow>
     </Container>
-    </>
+    </Paper>
+    
   )
 }

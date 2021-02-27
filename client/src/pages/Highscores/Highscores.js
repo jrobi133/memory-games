@@ -1,5 +1,6 @@
 import React from "react";
 import "./Highscores.css";
+import '../../App.css';
 
 
 
@@ -49,7 +50,7 @@ function HighScores() {
     ]
 
     return (
-        <>
+        <h1 className='highscores'>
 
             <div class="card bg-dark">
                 <header>Memory Games</header>
@@ -64,7 +65,7 @@ function HighScores() {
                 })}
             -
         </div>
-        </>
+        </h1>
     );
 }
 
