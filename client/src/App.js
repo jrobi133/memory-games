@@ -36,6 +36,7 @@ const App = () => {
           <Route path="/game-manager" component={GameManager} />
           <Route path="/profile" component={Profile} />
         </Switch>
+        
       </Router>
     ) 
   }
