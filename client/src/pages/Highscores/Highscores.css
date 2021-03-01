@@ -7,16 +7,16 @@ body {
     background-size: cover;
    }
 
-   .card {
+   /* .card {
        margin-top: 1em;
-   }
+   } */
 
    
 
 li {
     list-style: none;
-    font-size: .5em;
-    line-height: 2em;
+    /* font-size: .5em;
+    line-height: 2em; */
 }
 
 header {
