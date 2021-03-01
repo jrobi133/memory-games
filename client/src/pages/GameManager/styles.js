@@ -17,7 +17,12 @@ export default makeStyles(() => ({
   },
   image: {
     marginLeft: '15px',
+  
   },
+//   body: {
+//     height: '100%',
+//     margin: '0',
+// }
   // background: {
   //   backgroundImage: `url('../../images/mapBackgroud.png')`,
   //   minHeight: '100vh',
