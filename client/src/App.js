@@ -10,6 +10,7 @@ import ProtectedRoute from "./auth/protected-route"
 import { useAuth0 } from "@auth0/auth0-react";
 import Loading from "./components/loading"
 import GamePlay from "./pages/GamePlay/GamePlay"
+import Footer from './components/Footer/index';
 
 
 const App = () => {
@@ -36,7 +37,7 @@ const App = () => {
           <Route path="/game-manager" component={GameManager} />
           <Route path="/profile" component={Profile} />
         </Switch>
-        
+        <Footer />
       </Router>
     ) 
   }
