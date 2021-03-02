@@ -20,6 +20,9 @@ export default makeStyles(() => ({
     marginLeft: '15px',
   
   },
+  root: {
+    position: 'fixed',
+  }
 //   body: {
 //     height: '100%',
 //     margin: '0',
