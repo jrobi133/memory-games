@@ -2,7 +2,7 @@ import React from 'react';
 import './style.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faDice, faTrophy } from '@fortawesome/free-solid-svg-icons'
-import Nav from '../Nav/Navbar'
+import Nav from './gamePlayBar'
 
 const Header = props => {
   const default_style = {
