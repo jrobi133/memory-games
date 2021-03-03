@@ -54,7 +54,7 @@ function HighScores() {
     ]
 
     return (
-        <h1 className='highscores'>
+        <div className='highscores'>
 
             <div class="card w-50 bg-dark">
                 <header style={{textAlign: "center",}}>High Scores:</header>
@@ -69,7 +69,7 @@ function HighScores() {
                 })}
             
         </div>
-        </h1>
+        </div>
     );
 }
 
