@@ -4,31 +4,58 @@ import Header from '../../components/Header'
 import Wrapper from '../../components/Wrapper';
 import { Col, Row, Container, SectionRow } from '../../components/Grid';
 import Hero from '../../components/Hero';
+import { getPosts } from '../../actions/posts';
 
 class GamePlay extends Component {
-  state = {
-    heroes: [],
-    clickedHeroes: [],
-    score: 0,
-    highScore: 0,
-    pageTitle: "Clicky Game",
-    game_message: "Click any image to start"
-  };
-
-  componentDidMount(){
-    this.loadHeroes();
+  constructor(props) {
+    super(props);
+    this.state = {
+      heroes: [],
+      clickedHeroes: [],
+      score: 0,
+      highScore: 0,
+      pageTitle: "Clicky Game",
+      game_message: "Click any image to start"
+    };
   }
 
-  loadHeroes = () => {
-    if(this.state.heroes.length === 0){
-      axios.get('./heroes.json')
-        .then(res => this.setState({ heroes: this.shuffleArray(res.data) }))
-        .catch(err => console.log(err));
-    }else{
+  // pulls in resources passed into props
+  loadResources = () => {
+    console.log('==========[ BEFORE ]======================');
+    console.log({ props: this.props, state: this.state });
+
+    this.setState((state, props) => ({
+      heroes: props?.heroes ?? state.heroes,
+      clickedHeroes: props?.clickedHeroes ?? state.clickedHeroes,
+      score: props?.score ?? state.score,
+      highScore: props?.highScore ?? state.highScore,
+      pageTitle: props?.pageTitle ?? state.pageTitle,
+      game_message: props?.game_message ?? state.game_message
+    }));
+
+    this.reloadHeroes();
+    console.log('==========[ AFTER ]======================');
+    console.log({ props: this.props, state: this.state });
+  }
+
+  componentDidMount() {
+    this.loadResources();
+  }
+
+  // shuffles state of heroes 
+  reloadHeroes = () => {
+    if(this.state.heroes.length > 0) {
       this.setState( prevState => ({heroes: this.shuffleArray(prevState.heroes)}));
     }
+
+    // axios.get('./heroes.json')
+    //   .then(res => this.setState({ heroes: this.shuffleArray(res.data) }))
+    //   .catch(err => console.log(err));
+    // }else{
+    //   this.setState( prevState => ({heroes: this.shuffleArray(prevState.heroes)}));
   };
 
+  // Decides if scores goes up or down and reloadHeroes
   handleHeroClick = id => {
     if(!this.state.clickedHeroes.includes(id)){
       this.setState( prevState => ({
@@ -42,11 +69,11 @@ class GamePlay extends Component {
         game_message: "You Lose!",
         clickedHeroes: [],
         score: 0,
-        highScore: (prevState.score > prevState.highScore) ? prevState.score : prevState.highScore
+        highScore: (prevState.score > prevState.highScore) ? prevState.score : prevState.highScore 
       }));
     }
 
-    this.loadHeroes();
+    this.reloadHeroes();
     return;
   };
 
@@ -58,7 +85,7 @@ class GamePlay extends Component {
     return a;
   }
 
-  render(){ 
+  render() {
     return (
       <>
         <Header 
@@ -70,13 +97,13 @@ class GamePlay extends Component {
         <Wrapper id="main-container">
           <SectionRow elementID="main-section">
             {this.state.heroes.length ? (
-              this.state.heroes.map(hero => {
+              this.state.heroes.map(({_id, title, selectedFile }, index) => {
                 return (
                   <Hero 
-                    key={hero._id}
-                    id={hero._id}
-                    heading={hero.name}
-                    src={hero.image}
+                    key={`${_id}-${index}`}
+                    id={_id}
+                    heading={title}
+                    src={selectedFile}
                     handleHeroClick={this.handleHeroClick}
                   />
                 );

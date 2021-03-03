@@ -28,13 +28,9 @@ const styles = {
 }
 
 export default function GameManager() {
-
-
-
   const [currentId, setCurrentId] = useState(0);
   const dispatch = useDispatch();
   const classes = useStyles();
-
 
   useEffect(() => {
     dispatch(getPosts());
