@@ -1,10 +1,9 @@
 import React, { Component } from 'react';
-import axios from 'axios';
 import Header from '../../components/Header'
 import Wrapper from '../../components/Wrapper';
-import { Col, Row, Container, SectionRow } from '../../components/Grid';
+import { SectionRow } from '../../components/Grid';
 import Hero from '../../components/Hero';
-import { getPosts } from '../../actions/posts';
+
 
 class GamePlay extends Component {
   constructor(props) {
@@ -21,9 +20,6 @@ class GamePlay extends Component {
 
   // pulls in resources passed into props
   loadResources = () => {
-    console.log('==========[ BEFORE ]======================');
-    console.log({ props: this.props, state: this.state });
-
     this.setState((state, props) => ({
       heroes: props?.heroes ?? state.heroes,
       clickedHeroes: props?.clickedHeroes ?? state.clickedHeroes,
@@ -34,8 +30,6 @@ class GamePlay extends Component {
     }));
 
     this.reloadHeroes();
-    console.log('==========[ AFTER ]======================');
-    console.log({ props: this.props, state: this.state });
   }
 
   componentDidMount() {
@@ -47,12 +41,6 @@ class GamePlay extends Component {
     if(this.state.heroes.length > 0) {
       this.setState( prevState => ({heroes: this.shuffleArray(prevState.heroes)}));
     }
-
-    // axios.get('./heroes.json')
-    //   .then(res => this.setState({ heroes: this.shuffleArray(res.data) }))
-    //   .catch(err => console.log(err));
-    // }else{
-    //   this.setState( prevState => ({heroes: this.shuffleArray(prevState.heroes)}));
   };
 
   // Decides if scores goes up or down and reloadHeroes
