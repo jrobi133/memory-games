@@ -8,24 +8,25 @@ import { useDispatch } from 'react-redux';
 import { getPosts } from '../../actions/posts';
 import yoshi from '../../images/yoshi.png';
 import '../../App.css';
-import Image from '../../images/mapBackgroud.png';
+// import Image from '../../images/mapBackgroud.png';
+import Content from './Content.js'
 
 
-const styles = {
-  paperContainer: {
-    backgroundImage: `url(${Image})`, 
-    backgroundAttachment: "fixed",
-    height: '100vh',
-    backgroundPosition: "center",
-    backgroundRepeat: "noRepeat",
-    backgroundSize: "cover",
-    // minHeight: '100vh',
-    // backgroundRepeat: 'no-repeat',
-    // backgroundSize: 'cover',
+// const styles = {
+//   paperContainer: {
+//     backgroundImage: `url(${Image})`, 
+//     backgroundAttachment: "fixed",
+//     height: '100vh',
+//     backgroundPosition: "center",
+//     backgroundRepeat: "noRepeat",
+//     backgroundSize: "cover",
+//     // minHeight: '100vh',
+//     // backgroundRepeat: 'no-repeat',
+//     // backgroundSize: 'cover',
 
     
-  }
-}
+//   }
+// }
 
 export default function GameManager() {
   const [currentId, setCurrentId] = useState(0);
@@ -38,7 +39,7 @@ export default function GameManager() {
 
   return (
     
-    <Paper style={styles.paperContainer}>
+    <Content>
     <Container maxWidth="lg">
       <AppBar className={classes.appBar} position="static" color="inherit">
         <Typography className={classes.heading} variant="h2" align="center">Game Manager</Typography>
@@ -57,7 +58,7 @@ export default function GameManager() {
         </Container>
       </Grow>
     </Container>
-    </Paper>
+    </Content>
     
   )
 }
