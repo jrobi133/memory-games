@@ -7,7 +7,7 @@ const ProtectedRoute = ({ component, ...args }) => (
   <Route
     component={withAuthenticationRequired(component, {
       onRedirecting: () => 
-      <Loading />,
+      <Loading />, 
     })}
     {...args}
   />
