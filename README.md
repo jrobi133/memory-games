@@ -67,3 +67,4 @@ To test this project, do the following:
 
 ## **SCREENSHOT**
 <img width="1280" alt="Screenshot memory game" src="https://user-images.githubusercontent.com/70412016/109901444-5466ff80-7c56-11eb-9548-d0b5a38f5e3c.png">
+<img width="1280" alt="Screenshot memory game 2" src="https://user-images.githubusercontent.com/70412016/109901519-782a4580-7c56-11eb-8428-c2c58ae4adb1.png">
