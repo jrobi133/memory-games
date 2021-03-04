@@ -3,6 +3,7 @@ import Header from '../../components/Header'
 import Wrapper from '../../components/Wrapper';
 import { SectionRow } from '../../components/Grid';
 import Hero from '../../components/Hero';
+import Content from './Content.js'
 
 
 class GamePlay extends Component {
@@ -75,7 +76,7 @@ class GamePlay extends Component {
 
   render() {
     return (
-      <>
+      <Content>
         <Header 
           game_message={this.state.game_message}
           score={this.state.score}
@@ -101,7 +102,7 @@ class GamePlay extends Component {
             )}
           </SectionRow>
         </Wrapper>
-      </>
+      </Content>
     );
   }
 }
