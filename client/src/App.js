@@ -44,7 +44,7 @@ const App = () => {
         <Navbar loggedIn={loggedIn} setReload={setReload} />
         <Switch>
           <ProtectedRoute exact path="/highscores" component={HighScores} />
-          <ProtectedRoute exact path="/game-play" component={(props) => allHeroes.length === 0 ? 
+          <Route exact path="/game-play" component={(props) => allHeroes.length === 0 ? 
              <Loading /> : <GamePlay 
             {...props} 
             heroes={allHeroes}
@@ -53,7 +53,7 @@ const App = () => {
             // highScore={} // extract users high score here maybe 
           />} />
           <Route exact path="/" component={Dashboard} />
-          <Route path="/game-manager" component={GameManager} />
+          <ProtectedRoute path="/game-manager" component={GameManager} />
           <Route path="/profile" component={Profile} />
         </Switch>
         <Footer />

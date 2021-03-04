@@ -34,7 +34,7 @@ export default function GameManager() {
   const classes = useStyles();
 
   useEffect(() => {
-    dispatch(getPosts());
+    dispatch(getPosts);
   }, [currentId, dispatch]);
 
   return (
