@@ -7,6 +7,8 @@ const BackGround = styled.div`
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  padding-top: 50px;
+  padding-bottom: 125px;
 `;
 
 export default BackGround
