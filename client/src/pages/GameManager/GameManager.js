@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react"
-// import { Card, Button, Alert } from "react-bootstrap"
 import { Container, AppBar, Typography, Grow, Grid, Paper } from '@material-ui/core';
 import Posts from '../../components/Posts/Posts';
 import Form from "../../components/Form/Form"
@@ -8,25 +7,8 @@ import { useDispatch } from 'react-redux';
 import { getPosts } from '../../actions/posts';
 import yoshi from '../../images/yoshi.png';
 import '../../App.css';
-// import Image from '../../images/mapBackgroud.png';
 import Content from './Content.js'
 
-
-// const styles = {
-//   paperContainer: {
-//     backgroundImage: `url(${Image})`, 
-//     backgroundAttachment: "fixed",
-//     height: '100vh',
-//     backgroundPosition: "center",
-//     backgroundRepeat: "noRepeat",
-//     backgroundSize: "cover",
-//     // minHeight: '100vh',
-//     // backgroundRepeat: 'no-repeat',
-//     // backgroundSize: 'cover',
-
-    
-//   }
-// }
 
 export default function GameManager() {
   const [currentId, setCurrentId] = useState(0);
