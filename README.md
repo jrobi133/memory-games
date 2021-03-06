@@ -23,7 +23,7 @@
 
 ## **PROJECT DESCRIPTION**
 
-> This app is a memory game that gives you 30 character and you have to pick them without picking 
+> This is a react app memory game that gives you 30 character and you have to pick them without picking 
 the same character twice. It keeps track of how many you get right and at the end you can submit a 
 highscore. The user will be able to create and sign into an accout. After you have signed in then 
 you can added your own charactor to the game if you want or just play the game. you can play the game
@@ -53,11 +53,10 @@ Please contact us for all application inqueries.
 
 ## **INSTALLATION**
 
-> 1. To Install on LocalHost: Clone [GitHub repository](https://github.com/HeavensRegent/reserve-a-room) to local workspace
-> 2. Open terminal in project base directory and run "npm install"
-> 4. Edit .env.EXAMPLE file to have your local environment values
-> 5. Rename .env.EXAMPLE to .env
-> 7. In terminal run "npm run start" to launch application
+> 1. To Install on LocalHost: Clone [GitHub repository](https://github.com/jrobi133/memory-games) to local workspace
+> 2. Open terminal and run "npm install" on both package.json files
+> 3. Open new terminal and do an npm start
+
 
 ---
 
