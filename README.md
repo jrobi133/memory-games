@@ -28,7 +28,7 @@ the same character twice. It keeps track of how many you get right and at the en
 highscore. The user will be able to create and sign into an accout. After you have signed in then 
 you can added your own charactor to the game if you want or just play the game. you can play the game
 without creating an accout but you wont be able to add a character or submit highscore. We are using 
-Heroku to host the website and using JawsDB for the database. 
+Heroku to host the website and using Mongo AtlasDB for the database. 
 
 
 ---
@@ -55,10 +55,8 @@ Please contact us for all application inqueries.
 
 > 1. To Install on LocalHost: Clone [GitHub repository](https://github.com/HeavensRegent/reserve-a-room) to local workspace
 > 2. Open terminal in project base directory and run "npm install"
-> 3. Copy contents of db/db-init.sql to your local MySQL workbench and run to create db.
 > 4. Edit .env.EXAMPLE file to have your local environment values
 > 5. Rename .env.EXAMPLE to .env
-> 6. In terminal run "npm run seed" to create initial db entries
 > 7. In terminal run "npm run start" to launch application
 
 ---
@@ -68,28 +66,8 @@ Please contact us for all application inqueries.
 To use this project, do the following:
 
 > 1. Ensure Installation Steps have been completed.
-> 2. For localhost: Open Browser and browse to URL https://localhost:3001
-> 3. You may view posts, login, create post, comment on posts, delete posts.
-> 
----
-
-## **TESTING**
-
-To test this project, do the following:
-
-> 1. To test on Heroku, Ensure Installation steps are complete
-> 2. Verify Working on localhost, by performing Usage Steps
-> 3. Push your local project to heroku, in terminal run commmand "heroku login"
-> 4. Login to your Heroku account in the browser window that pops up, then return to terminal.
-> 5. Run command "heroku create my_blog_site", to create a heroku app from project
-> 6. Verify connection between github and heroku by running command "git remote -v"
-> 7. Push code to heroku by running "git push heroku main"
-> 8. Login to your Heroku account in web browser and find the app just published.
-> 9. In the menu bar select "more->Run console"
-> 10. In the console that comes up run "npm run seed", to create initial entries in heroku db.
-> 11. Select "settings" under your app in heroku browser and scroll down to "Domain" area.
-> 12. This is where it lists the domain to your hosted app, click the link to open your app website.
-> 13. Test app until satisfied.
+> 2. For localhost: Open Browser and browse to URL https://localhost:3000
+> 3. On the game manager page you can create, edit and delete the cards.
 
 ---
 
