@@ -51,6 +51,28 @@ Please contact us for all application inqueries.
 
 ---
 
+## **INSTALLATION**
+
+> 1. To Install on LocalHost: Clone [GitHub repository](https://github.com/HeavensRegent/reserve-a-room) to local workspace
+> 2. Open terminal in project base directory and run "npm install"
+> 3. Copy contents of db/db-init.sql to your local MySQL workbench and run to create db.
+> 4. Edit .env.EXAMPLE file to have your local environment values
+> 5. Rename .env.EXAMPLE to .env
+> 6. In terminal run "npm run seed" to create initial db entries
+> 7. In terminal run "npm run start" to launch application
+
+---
+
+## **USAGE**
+
+To use this project, do the following:
+
+> 1. Ensure Installation Steps have been completed.
+> 2. For localhost: Open Browser and browse to URL https://localhost:3001
+> 3. You may view posts, login, create post, comment on posts, delete posts.
+> 
+---
+
 ## **TESTING**
 
 To test this project, do the following:
