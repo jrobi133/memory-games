@@ -23,7 +23,13 @@
 
 ## **PROJECT DESCRIPTION**
 
-> This app creates a website that allows the user to reserve a room or a venue to host an event. The user’s will be able to see what the space may include like a basketball court, ping pong tables, table and chairs, or whatever the space includes. Then the user will be able to see a calendar showing the rooms or venues and what times are available to be reserved. If a time is booked and it is a public event it will show what event is going on at that time. If its not a public event it will show that it is booked for a private event. The site will require all users to sign up to be able to reserve a room. We are using Heroku to host the website and using JawsDB for the database.
+> This app is a memory game that gives you 30 character and you have to pick them without picking 
+the same character twice. It keeps track of how many you get right and at the end you can submit a 
+highscore. The user will be able to create and sign into an accout. After you have signed in then 
+you can added your own charactor to the game if you want or just play the game. you can play the game
+without creating an accout but you wont be able to add a character or submit highscore. We are using 
+Heroku to host the website and using JawsDB for the database. 
+
 
 ---
 
