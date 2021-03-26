@@ -41,6 +41,5 @@ export default function GameManager() {
       </Grow>
     </Container>
     </Content>
-    
   )
 }
